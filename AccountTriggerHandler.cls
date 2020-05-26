@@ -1,17 +1,3 @@
-/*Your client has the following requirements.
-1. Whenever an account is created, create two default opportunities for it. Call one “Default
-Residential Opp” and call the other “Default Commercial Opp”
-2. Whenever an account is updated, check the account’s Type field. If the account is of
-type ‘Prospect’ check its child opportunities to ensure that the default opportunities,
-created in step 1, are still there. If either-or both-are missing, replace them, and send an
-email to the owner of the account to alert them that the opportunities were altered or
-deleted.
-3. They have requested that you do not use any third-party code or frameworks.
-Since we’re not giving you an org to work in, any non-code elements must be described
-completely and clearly.
-All of your code must be completely ready for deployment to production (including a test class),
-and represent the quality of code you would ship to a customer.*/
-
 public class AccountTriggerHandler {
     
     public static void createOpportunities(Map<Id,Account> acctsMap) {
